@@ -7,5 +7,45 @@
 }
 
 /* ESTILO GENERAL */
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 155px;
+  margin-top: 10px;
+}
+
+.main-menu .container {
+  width: 155px;
+  /* display: flex; */
+}
+.main-menu__item {
+  font-size: 16px;
+  text-decoration: none;
+}
+.main-container {
+  background-color: var(--background-page);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  align-items: center;
+}
 
 /* TABLET & DESKTOP RESPONSIVE*/
