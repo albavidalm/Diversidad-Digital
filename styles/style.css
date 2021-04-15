@@ -6,15 +6,18 @@
   --color-main: #ffffff;
 }
 
-/* ESTILO GENERAL */
+/* ======== ESTILO GENERAL ====== */
 * {
   font-family: "Rubik", sans-serif;
 }
 
+/* Header */
+
 .main-header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
+  background-color: var(--color-main);
 }
 
 .main-header .container {
@@ -36,16 +39,25 @@
   font-size: 16px;
   text-decoration: none;
 }
+
+/* Main content */
+
 .main-container {
   background-color: var(--background-page);
-  height: 100%;
-  text-align: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
 }
 
 .title {
   align-items: center;
+  justify-content: space-around;
+  color: var(--color-main);
+  font-size: 30px;
+  line-height: 0.2;
 }
 
-/* TABLET & DESKTOP RESPONSIVE*/
+/* ======== TABLET AND DESKTOP RESPONSIVE ====== */
