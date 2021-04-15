@@ -31,13 +31,25 @@
   margin-top: 10px;
 }
 
-.main-menu .container {
-  width: 155px;
-  /* display: flex; */
+/* .main-menu .container {
+  width: 100%;
+} */
+
+.nav-header {
+  width: 100vw;
+  height: 80px;
 }
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .main-menu__item {
   font-size: 16px;
-  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 13px;
 }
 
 /* Main content */
@@ -53,11 +65,19 @@
 }
 
 .title {
-  align-items: center;
-  justify-content: space-around;
   color: var(--color-main);
   font-size: 30px;
-  line-height: 0.2;
+  line-height: 0.1;
 }
 
 /* ======== TABLET AND DESKTOP RESPONSIVE ====== */
+@media all and (min-with: 768px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-header {
+    background-color: transparent;
+    width: 50%;
